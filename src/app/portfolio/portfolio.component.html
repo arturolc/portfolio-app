@@ -1,6 +1,16 @@
 <div class="my-container">
-  <p>
-    portfolio works!
-  </p>
+  <h1 class="title">Portfolio</h1>
+
+  <div *ngFor="let project of projects">
+      <div class="card bg-dark text-black">
+        <!-- <img class="card-img" src="assets/images/beatmachineopaquewhite.png" alt="Card image"> -->
+        <div class="card-img imagen">
+          <div class="card-img-overlay">
+            <h5 class="card-title">{{ project?.title }}</h5>
+            <p class="card-text">{{ project?.description }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
 </div>

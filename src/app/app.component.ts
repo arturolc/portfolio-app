@@ -9,6 +9,6 @@ import { fadeAnimation } from './animations';
 })
 export class AppComponent {
   title = 'app';
-
+  isCollapsed = true;
   
 }

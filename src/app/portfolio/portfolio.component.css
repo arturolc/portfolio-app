@@ -4,5 +4,26 @@
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    
+}
+
+h1 {
+    text-transform: uppercase;
+    color: white;
+}
+
+.imagen {
+    background-image: url('/assets/images/beatmachineopaquewhite.png');
+    background-size: cover;
+    width: 100%;
+    min-height: 256px;
+}
+
+.card { 
+    margin-top: 20px;
+    max-height: 250px;
+    font-weight: bold;
+}
+
+.bord {
+    border-bottom: 10px solid white ;
 }

@@ -1,23 +1,35 @@
-.container {
-    position: absolute;
-    top: 40%;
+#profile {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 40%;
+}
+#hash {
+    width: 40%;
 }
 
-
 h1 {
-    font-size: 10em;
+    font-size: 3em;
     color: white;
+    font-family: "Familiar Pro";
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+#name {
+    text-align: center;
 }
 
 .my-container{
-    background: url("/assets/images/code.jpg") no-repeat center center fixed;
+    background-color:rgba(0,0,0,0.5);
+    background: url("/assets/images/codeopaque.png") no-repeat center center fixed; 
+    text-align: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    opacity: .95;
 }
 
 .container {
-    opacity: 1;
+    z-index: 1;
 }
+

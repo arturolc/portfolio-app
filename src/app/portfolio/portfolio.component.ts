@@ -1,4 +1,5 @@
 import { Component, OnInit, OnDestroy, AfterViewInit, ElementRef } from '@angular/core';
+import { ProjectService } from './project.service';
 
 @Component({
   selector: 'app-portfolio',
@@ -6,7 +7,12 @@ import { Component, OnInit, OnDestroy, AfterViewInit, ElementRef } from '@angula
   styleUrls: ['./portfolio.component.css']
 })
 export class PortfolioComponent {
+  public projects = [];
+  constructor(private _projectService: ProjectService) { }
 
-  constructor(private elementRef : ElementRef) { }
-
+    ngOnInit() {
+      this._projectService.getProjects()
+        .subscribe(data => this.projects = data);
+    }
 }
+

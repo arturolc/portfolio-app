@@ -1,0 +1,16 @@
+#brand {
+    font-family: "Familiar Pro", "Bold";
+    color: white;
+}
+
+.navbar-nav {
+    text-align: right;
+}
+
+.nav-link {
+    color: white;
+}
+
+.navbar {
+    text-transform: uppercase;
+}
